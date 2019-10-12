@@ -1,0 +1,6 @@
+<div *ngIf="product">
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.price | currency }}</h4>
+  <p *ngIf="product.description">Description: {{ product.description }}</p>
+</div>
+<h4 *ngIf="!product">Sorry, we couldn't find what you are searching</h4>
